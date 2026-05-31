@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Grain</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #0e1410;
+      color: #deeede;
+      line-height: 1.7;
+      padding: 40px 20px 80px;
+      max-width: 680px;
+      margin: 0 auto;
+    }
+    h1 { font-size: 2rem; font-weight: 700; margin-bottom: 6px; color: #deeede; }
+    .updated { font-size: 0.85rem; color: #638a74; margin-bottom: 40px; }
+    h2 { font-size: 1.1rem; font-weight: 700; color: #5aa870; margin: 36px 0 10px; }
+    p { margin-bottom: 12px; color: #c0d4c8; }
+    ul { padding-left: 20px; margin-bottom: 12px; color: #c0d4c8; }
+    li { margin-bottom: 6px; }
+    a { color: #5aa870; }
+    .accent { display: block; width: 40px; height: 2px; background: #5aa870; opacity: 0.4; margin-bottom: 32px; }
+    @media (prefers-color-scheme: light) {
+      body { background: #f5f3ef; color: #1c2a1f; }
+      h1 { color: #1c2a1f; }
+      h2 { color: #3d7a52; }
+      p, ul { color: #3a4f40; }
+      a { color: #3d7a52; }
+      .updated { color: #638a74; }
+    }
+  </style>
+</head>
+<body>
+  <h1>Privacy Policy</h1>
+  <span class="accent"></span>
+  <p class="updated">Last updated: 31 May 2026</p>
+
+  <p>Grain is a film photography roll tracker app. This policy explains what data we collect, why, and how you can control it.</p>
+
+  <h2>1. Who We Are</h2>
+  <p>Grain is an independent app. Contact: <a href="mailto:grainfilmapp@gmail.com">grainfilmapp@gmail.com</a></p>
+
+  <h2>2. What Data We Collect</h2>
+
+  <p><strong>All users (free tier)</strong></p>
+  <p>Free users store all data locally on their device using AsyncStorage. Nothing is sent to our servers unless you sign in and upgrade to Pro.</p>
+
+  <p><strong>Signed-in Pro users</strong></p>
+  <ul>
+    <li><strong>Account information:</strong> Your email address and display name, obtained when you sign in with Google or Apple.</li>
+    <li><strong>Roll &amp; shot data:</strong> Film stock, camera, format, ISO, frames, status, notes, aperture, shutter speed, exposure compensation, and any other metadata you enter.</li>
+    <li><strong>Location data:</strong> If you choose to tag a shot, we store the GPS latitude/longitude and a human-readable place name (e.g. "Hyde Park, London"). Location access is requested on-demand and only when you tap to tag a shot — never in the background.</li>
+    <li><strong>Photos:</strong> Film scan images you attach to shots are uploaded to our cloud storage. You control which shots have photos attached.</li>
+    <li><strong>Purchase information:</strong> Your subscription or purchase status is managed by RevenueCat. We receive your entitlement status ("pro") but not your full payment details.</li>
+  </ul>
+
+  <h2>3. How We Use Your Data</h2>
+  <ul>
+    <li>To sync your rolls and shots across your devices (Pro users).</li>
+    <li>To display your photos in the app.</li>
+    <li>To provide map and stats features (Pro users).</li>
+    <li>To process your subscription via RevenueCat.</li>
+  </ul>
+  <p>We do not use your data for advertising, profiling, or sale to third parties.</p>
+
+  <h2>4. Third-Party Services</h2>
+  <ul>
+    <li><strong>Supabase</strong> — Our backend database and file storage provider. Data is stored in the EU region. <a href="https://supabase.com/privacy">Supabase Privacy Policy</a>.</li>
+    <li><strong>RevenueCat</strong> — Manages in-app purchases and subscription status. <a href="https://www.revenuecat.com/privacy">RevenueCat Privacy Policy</a>.</li>
+    <li><strong>Google Sign-In</strong> — Used for authentication. We only request your email and name. <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</li>
+    <li><strong>Apple Sign-In</strong> — Used for authentication on iOS. <a href="https://www.apple.com/legal/privacy/">Apple Privacy Policy</a>.</li>
+    <li><strong>Nominatim / OpenStreetMap</strong> — Used for place-name search within the location picker. Queries contain only the text you type, not your GPS location. <a href="https://osmfoundation.org/wiki/Privacy_Policy">OSM Privacy Policy</a>.</li>
+  </ul>
+
+  <h2>5. Data Retention</h2>
+  <p>Your cloud data is retained for as long as your account is active. If your Pro subscription lapses, your data is migrated back to your device and removed from our servers. If you delete your account (via Settings → Delete Account), all your data — including stored photos — is permanently deleted from our servers.</p>
+  <p>Free-tier users store all data locally on their device. Uninstalling the app removes this data.</p>
+
+  <h2>6. Your Rights</h2>
+  <ul>
+    <li><strong>Access:</strong> Your data is visible directly in the app.</li>
+    <li><strong>Deletion:</strong> Use Settings → Delete Account to permanently delete all your data. You can also email us at <a href="mailto:grainfilmapp@gmail.com">grainfilmapp@gmail.com</a> to request deletion.</li>
+    <li><strong>Portability:</strong> Pro users can export all roll and shot data as CSV from the Archive → Stats screen.</li>
+  </ul>
+
+  <h2>7. Children's Privacy</h2>
+  <p>Grain is not directed at children under 13. We do not knowingly collect data from children under 13.</p>
+
+  <h2>8. Changes to This Policy</h2>
+  <p>We may update this policy from time to time. The "last updated" date at the top of this page reflects the most recent revision. Continued use of the app after changes constitutes acceptance.</p>
+
+  <h2>9. Contact</h2>
+  <p>Questions about this policy? Email <a href="mailto:grainfilmapp@gmail.com">grainfilmapp@gmail.com</a>.</p>
+</body>
+</html>
