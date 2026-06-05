@@ -36,7 +36,7 @@
 <body>
   <h1>Privacy Policy</h1>
   <span class="accent"></span>
-  <p class="updated">Last updated: 31 May 2026</p>
+  <p class="updated">Last updated: 5 June 2026</p>
 
   <p>Grain is a film photography roll tracker app. This policy explains what data we collect, why, and how you can control it.</p>
 
@@ -45,22 +45,23 @@
 
   <h2>2. What Data We Collect</h2>
 
-  <p><strong>All users (free tier)</strong></p>
-  <p>Free users store all data locally on their device using AsyncStorage. Nothing is sent to our servers unless you sign in and upgrade to Pro.</p>
+  <p><strong>Guest and free-tier users</strong></p>
+  <p>Guest users store roll and shot data locally on their device using AsyncStorage. Nothing is sent to our sync servers unless you sign in and upgrade to Pro. If you sign in but do not have Pro, Grain may use your account only for authentication, subscription restoration, feedback, and account management.</p>
 
   <p><strong>Signed-in Pro users</strong></p>
   <ul>
     <li><strong>Account information:</strong> Your email address and display name, obtained when you sign in with Google or Apple.</li>
-    <li><strong>Roll &amp; shot data:</strong> Film stock, camera, format, ISO, frames, status, notes, aperture, shutter speed, exposure compensation, and any other metadata you enter.</li>
-    <li><strong>Location data:</strong> If you choose to tag a shot, we store the GPS latitude/longitude and a human-readable place name (e.g. "Hyde Park, London"). Location access is requested on-demand and only when you tap to tag a shot — never in the background.</li>
-    <li><strong>Photos:</strong> Film scan images you attach to shots are uploaded to our cloud storage. You control which shots have photos attached.</li>
-    <li><strong>Purchase information:</strong> Your subscription or purchase status is managed by RevenueCat. We receive your entitlement status ("pro") but not your full payment details.</li>
+    <li><strong>Roll &amp; shot metadata:</strong> Film stock, camera, format, ISO, frames, status, labels, groups, notes, aperture, shutter speed, exposure compensation, conditions, dates, and any other roll or shot details you enter.</li>
+    <li><strong>Location tags:</strong> If you choose to tag a shot, we store the GPS latitude/longitude and a human-readable place name (for example, "Hyde Park, London"). Location access is requested on-demand and only when you use location features — never in the background.</li>
+    <li><strong>Attached scans:</strong> Film scan images you attach to shots are uploaded to our cloud storage for sync. You control which shots have photos attached.</li>
+    <li><strong>Purchase information:</strong> Your subscription status is managed by RevenueCat. Grain receives entitlement status and related subscription identifiers so it can unlock Pro features, but not your full payment details.</li>
+    <li><strong>Feedback:</strong> If you send feedback from Settings, we store your message and, when signed in, your user ID so we can understand and respond to support issues.</li>
   </ul>
 
   <h2>3. How We Use Your Data</h2>
   <ul>
-    <li>To sync your rolls and shots across your devices (Pro users).</li>
-    <li>To display your photos in the app.</li>
+    <li>To sync your roll and shot metadata across your devices (Pro users).</li>
+    <li>To display and sync attached scan photos in the app (Pro users).</li>
     <li>To provide map and stats features (Pro users).</li>
     <li>To process your subscription via RevenueCat.</li>
   </ul>
@@ -76,13 +77,13 @@
   </ul>
 
   <h2>5. Data Retention</h2>
-  <p>Your cloud data is retained for as long as your account is active. If your Pro subscription lapses, your data is migrated back to your device and removed from our servers. If you delete your account (via Settings → Delete Account), all your data — including stored photos — is permanently deleted from our servers.</p>
+  <p>Your cloud data is retained for as long as your account is active. If your Pro subscription lapses, Grain attempts to migrate your roll and shot metadata back to your device and remove synced database rows according to the app's lapse flow. Attached scan photos may remain on our servers for a 30-day grace period so you can resubscribe and keep them; after that grace period, they are deleted. If you delete your account from Settings, Grain deletes your account and associated cloud data, including stored photos, and clears local Grain data on that device.</p>
   <p>Free-tier users store all data locally on their device. Uninstalling the app removes this data.</p>
 
   <h2>6. Your Rights</h2>
   <ul>
     <li><strong>Access:</strong> Your data is visible directly in the app.</li>
-    <li><strong>Deletion:</strong> Use Settings → Delete Account to permanently delete all your data. You can also email us at <a href="mailto:grainfilmapp@gmail.com">grainfilmapp@gmail.com</a> to request deletion.</li>
+    <li><strong>Deletion:</strong> Signed-in users can use Settings → Delete Account to delete their Grain account and associated cloud data. You can also email us at <a href="mailto:grainfilmapp@gmail.com">grainfilmapp@gmail.com</a> to request deletion or get help if the in-app deletion flow fails.</li>
     <li><strong>Portability:</strong> Pro users can export all roll and shot data as CSV from the Archive → Stats screen.</li>
   </ul>
 
