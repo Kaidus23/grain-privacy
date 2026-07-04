@@ -36,7 +36,7 @@
 <body>
   <h1>Privacy Policy</h1>
   <span class="accent"></span>
-  <p class="updated">Last updated: 5 June 2026</p>
+  <p class="updated">Last updated: 4 July 2026</p>
 
   <p>Grain is a film photography roll tracker app. This policy explains what data we collect, why, and how you can control it.</p>
 
@@ -45,8 +45,9 @@
 
   <h2>2. What Data We Collect</h2>
 
-  <p><strong>Guest and free-tier users</strong></p>
-  <p>Guest users store roll and shot data locally on their device using AsyncStorage. Nothing is sent to our sync servers unless you sign in and upgrade to Pro. If you sign in but do not have Pro, Grain may use your account only for authentication, subscription restoration, feedback, and account management.</p>
+  <p><strong>Guest, free-tier, and signed-out Pro users</strong></p>
+  <p>Guest and free-tier users store roll and shot data locally on their device using AsyncStorage. If you buy Grain Pro without signing in, your roll and shot data, attached scans, and location tags still stay on your device unless you later sign in and enable cloud sync. Grain uses RevenueCat to verify your anonymous Pro entitlement and unlock Pro features, but your app data is not sent to our sync servers while you remain signed out.</p>
+  <p>If you sign in but do not have Pro, Grain may use your account only for authentication, subscription restoration, and account management. If you send feedback while signed in, Grain stores your message and user ID so we can understand and respond to support issues.</p>
 
   <p><strong>Signed-in Pro users</strong></p>
   <ul>
@@ -60,8 +61,9 @@
 
   <h2>3. How We Use Your Data</h2>
   <ul>
-    <li>To sync your roll and shot metadata across your devices (Pro users).</li>
-    <li>To display and sync attached scan photos in the app (Pro users).</li>
+    <li>To unlock Pro features and verify subscription status, including for signed-out Pro users.</li>
+    <li>To sync your roll and shot metadata across your devices (signed-in Pro users).</li>
+    <li>To display and sync attached scan photos in the app (signed-in Pro users).</li>
     <li>To provide map and stats features (Pro users).</li>
     <li>To process your subscription via RevenueCat.</li>
   </ul>
@@ -73,12 +75,12 @@
     <li><strong>RevenueCat</strong> — Manages in-app purchases and subscription status. <a href="https://www.revenuecat.com/privacy">RevenueCat Privacy Policy</a>.</li>
     <li><strong>Google Sign-In</strong> — Used for authentication. We only request your email and name. <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</li>
     <li><strong>Apple Sign-In</strong> — Used for authentication on iOS. <a href="https://www.apple.com/legal/privacy/">Apple Privacy Policy</a>.</li>
-    <li><strong>Nominatim / OpenStreetMap</strong> — Used for place-name search within the location picker. Queries contain only the text you type, not your GPS location. <a href="https://osmfoundation.org/wiki/Privacy_Policy">OSM Privacy Policy</a>.</li>
+    <li><strong>Geoapify</strong> — Used for place-name search and autocomplete within the location picker. Queries contain only the text you type, not your GPS location. <a href="https://www.geoapify.com/privacy-policy/">Geoapify Privacy Policy</a>.</li>
   </ul>
 
   <h2>5. Data Retention</h2>
-  <p>Your cloud data is retained for as long as your account is active. If your Pro subscription lapses, Grain attempts to migrate your roll and shot metadata back to your device and remove synced database rows according to the app's lapse flow. Attached scan photos may remain on our servers for a 30-day grace period so you can resubscribe and keep them; after that grace period, they are deleted. If you delete your account from Settings, Grain deletes your account and associated cloud data, including stored photos, and clears local Grain data on that device.</p>
-  <p>Free-tier users store all data locally on their device. Uninstalling the app removes this data.</p>
+  <p>Your cloud data is retained for as long as your account is active. If your signed-in Pro subscription lapses, Grain attempts to migrate your roll and shot metadata back to your device and remove synced database rows according to the app's lapse flow. Attached scan photos that were synced to our servers may remain there for a 30-day grace period so you can resubscribe and keep them; after that grace period, they are deleted. If you delete your account from Settings, Grain deletes your account and associated cloud data, including stored photos, and clears local Grain data on that device.</p>
+  <p>Free-tier and signed-out Pro users store app data locally on their device. If you bought Pro without signing in, attached scans are local only, so Grain does not have cloud photo copies to delete after a subscription lapse. Uninstalling the app removes locally stored data.</p>
 
   <h2>6. Your Rights</h2>
   <ul>
